@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .box {
+        border: 1px solid black;
+        padding: 10px;
+        width: fit-content;
+        background-color: lightgray;
+      }
+      a {
+        text-decoration: none;
+        color: blue;
+        text-decoration: underline;
+      }
+
+      .email-link {
+        background-color: white;
+        padding: 2px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <p>Click any of the following links</p>
+      <a href="https://www.example.com" target="_blank">Opens in New</a> |
+      <a href="https://www.example.com" target="_self">Opens in Self</a> |
+      <a href="https://www.example.com" target="_parent">Opens in Parent</a> |
+      <a href="https://www.example.com" target="_top">Opens in Body</a> |
+      <a href="mailto:example@example.com" class="email-link">Send email</a>
+    </div>
+  </body>
+</html>
