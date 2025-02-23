@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Form</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .login-container {
+        width: 350px;
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
+
+      .avatar {
+        width: 100px;
+        border-radius: 50%;
+        margin-bottom: 15px;
+      }
+
+      h2 {
+        margin-bottom: 20px;
+      }
+
+      .input-group {
+        text-align: left;
+        margin-bottom: 15px;
+      }
+
+      .input-group label {
+        display: block;
+        font-weight: bold;
+      }
+
+      .input-group input {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      .login-btn {
+        width: 100%;
+        background-color: #4caf50;
+        color: white;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+
+      .login-btn:hover {
+        background-color: #45a049;
+      }
+
+      .checkbox-group {
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        margin-top: 10px;
+      }
+
+      .forgot-password {
+        float: right;
+        font-size: 14px;
+        text-decoration: none;
+        color: #007bff;
+      }
+
+      .forgot-password:hover {
+        text-decoration: underline;
+      }
+
+      .cancel-btn {
+        width: 100px;
+        background-color: #d9534f;
+        color: white;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 14px;
+        margin-top: 10px;
+      }
+
+      .cancel-btn:hover {
+        background-color: #c9302c;
+      }
+
+      .footer {
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: grey;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="login-container">
+      <img
+        src="https://cdn-icons-png.flaticon.com/512/147/147144.png"
+        alt="Avatar"
+        class="avatar"
+      />
+      <h2>Login</h2>
+
+      <div class="input-group">
+        <label>Username</label>
+        <input type="text" placeholder="Enter Username" />
+      </div>
+
+      <div class="input-group">
+        <label>Password</label>
+        <input type="password" placeholder="Enter Password" />
+      </div>
+
+      <button class="login-btn">Login</button>
+
+      <div class="checkbox-group">
+        <input type="checkbox" id="remember" />
+        <label for="remember">Remember me</label>
+      </div>
+
+      <div class="footer">
+        <button class="cancel-btn">Cancel</button>
+        <a href="#" class="forgot-password"
+          >Forgot <strong>password?</strong></a
+        >
+      </div>
+    </div>
+  </body>
+</html>
